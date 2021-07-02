@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +13,16 @@ body {
 }
 
 .main {
-  width: 500px;
+  width: 498px;
+  height: 100vh;
   margin: 0 auto;
+  border: 1px solid black;
+  border-bottom: 0px;
+  border-top: 0px;
 }
 
 .main .logoArea {
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,15 +214,13 @@ body {
 }
 
 .main.home {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
 }
 
 .navbar {
   position: fixed;
   bottom: 0;
-  width: 500px;
+  width: 498px;
   height: 10vh;
   background-color: #1f78b4;
   display: -webkit-box;
@@ -309,7 +311,7 @@ body {
 
 .airQualityBox #position {
   font-size: 18px;
-  color: #E3E0E0;
+  color: #878787;
   margin-top: -4px;
 }
 
@@ -325,7 +327,7 @@ body {
 
 .airQualityBox #fullDescription {
   display: block;
-  color: #E3E0E0;
+  color: #878787;
   font-size: 18px;
   margin-top: -13px;
 }
@@ -368,7 +370,7 @@ body {
 .airQualityBox .particle #index {
   margin-top: -10px;
   font-size: 16px;
-  color: #E3E0E0;
+  color: #878787;
 }
 
 .button.share {
@@ -435,5 +437,143 @@ body {
   z-index: 100;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+}
+
+.adviceContainer {
+  height: 73vh;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.adviceContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.adviceContainer .singleAdvice {
+  position: relative;
+  width: 340px;
+  height: 125px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid #fff;
+}
+
+.adviceContainer .singleAdvice:hover > img {
+  -webkit-filter: grayscale(0) brightness(0.8) saturate(3);
+          filter: grayscale(0) brightness(0.8) saturate(3);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.adviceContainer .singleAdvice:hover > p {
+  color: white;
+  cursor: pointer;
+}
+
+.adviceContainer .singleAdvice img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  -webkit-filter: grayscale(0.3) brightness(0.5) saturate(2);
+          filter: grayscale(0.3) brightness(0.5) saturate(2);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.adviceContainer .singleAdvice p {
+  position: absolute;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px black;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.logoArea.settings {
+  position: absolute;
+  bottom: 8vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.settingContainer {
+  width: 460px;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+
+.settingContainer .singleSetting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.settingContainer .singleSetting p {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.settingContainer .singleSetting .toggleContainer {
+  width: 50px;
+  height: 20px;
+  background-color: #b2df8a;
+  border-radius: 30px;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.settingContainer .singleSetting .toggleContainer .toggle {
+  height: 30px;
+  width: 30px;
+  background-color: #121212;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translateX(-10%) translateY(-50%);
+          transform: translateX(-10%) translateY(-50%);
+  -webkit-box-shadow: 3px 1px 1px rgba(237, 237, 237, 0.6);
+          box-shadow: 3px 1px 1px rgba(237, 237, 237, 0.6);
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+.settingContainer .singleSetting .toggleContainer .toggle:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style_dark.css.map */

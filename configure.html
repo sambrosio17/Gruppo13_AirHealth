@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirHealth | Configurazione </title>
-    <link rel="stylesheet" href="./public/assets/style/style_light.css">
+    <link rel="stylesheet" href="./public/assets/style/style_dark.css">
 </head>
 <body>
     <div class="main">
@@ -14,37 +14,40 @@
             <p>AirHealth</p>
         </div>
 
-        <div class="formWrapper">
-            <div class="inputWrapper">
+        <form class="formWrapper">
+            <div class="inputWrapper username">
                 <label for="username">
                     Nome Utente
                 </label>
-                <input type="text" name="username">
+                <input type="text" name="username" placeholder="username"> 
             </div>
-            <div class="inputWrapper">
+            <div class="inputWrapper email">
                 <label for="email">
                     Email
                 </label>
-                <input type="email" name="email">
+                <input type="email" name="email" placeholder="user@email.com">
             </div>
             <div class="inputWrapper age">
                 <label for="age">
                     Età
                 </label>
-                <input type="text" name="email">
+                <input type="number" name="age" min="16" placeholder="16">
             </div>
             <div class="inputWrapper check">
-                <span class="outer"></span>
+                <span class="outer">
                 <span class="inner"></span>
+                </span>
                 <label for="check">
                     Acconsento al trattamento <br>dei dati personali.
                 </label>
             </div>
-            <div class="button config">
-                <img src="./public/assets/images/Ipaper-plane.png">
-                <p>Invia</p>
+            <div class="button config"> 
+                    <img src="./public/assets/images/Ipaper-plane.png">
+                    <p>Invia</p>
             </div>
-        </div>
+        </form>
     </div>
+
+    <script src="./public/assets/js/configureHandler.js"></script>
 </body>
 </html>
