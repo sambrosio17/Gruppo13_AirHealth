@@ -1,0 +1,23 @@
+[
+    {
+        "title":"Usa i mezzi pubblici",
+        "description":"Guidare di meno non vuol dire restare a casa, prova ad usare mezzi alternativi per andare dove vuoi. Ad esempio, potresti viaggiare in compagnia convidendo l'auto, utilizzare i mezzi pubblici oppure ancora a piedi o in bici.",
+        "image":"https://images.pexels.com/photos/5781358/pexels-photo-5781358.jpeg"
+    },
+    {
+        "title":"Rispetta l'atmosfera",
+        "description":"Scegli prodotti che rispettano l'atmosfera, potresti utilizzare i prodotti a base d'acqua in modo da diminuire la quantità di componenti organici volatili.",
+        "image":"https://images.pexels.com/photos/5439/earth-space.jpg"
+    },
+    {
+        "title":"Risparmia energia",
+        "description":"Spegni le luci quando non c'è bisogno e stacca la spina degli apparecchi elettrici di notte: consumano anche da spenti.",
+        "image":"https://images.pexels.com/photos/45072/pexels-photo-45072.jpeg"
+    },
+    {
+        "title":"Riduci le emissioni",
+        "description":"Non usare la stufa a legna nei giorni di forte inquinamento atmosferico, guida lentamente sulle strade asfaltate...",
+        "image":"https://images.pexels.com/photos/1737779/pexels-photo-1737779.jpeg"
+    }
+
+]

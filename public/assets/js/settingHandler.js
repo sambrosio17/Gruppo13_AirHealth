@@ -53,4 +53,15 @@ document.querySelector(".toggle").addEventListener("click", async (el) => {
 
 });
 }
+
+const handleNav = () => {
+    let navIcons = document.querySelectorAll(".navbar > img");
+
+    navIcons[0].addEventListener('click', () => location.href="./home.html");
+    navIcons[1].addEventListener('click', () => location.href="./stats.html");
+    navIcons[2].addEventListener('click', () => location.href="./advice.html");
+    navIcons[3].addEventListener('click', () => location.href="./settings.html");
+}
+
+handleNav();
 app();
