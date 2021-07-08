@@ -1,3 +1,9 @@
+if(localStorage.getItem("username")==null){
+    window.location.href="./index.html";
+
+}
+
+
 if(localStorage.getItem("dark")==="false"){
     document.querySelector(".toggle").style.left="10%";
          //document.querySelector(".toggle").style.right="80%";

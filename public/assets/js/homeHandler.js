@@ -1,3 +1,9 @@
+if(localStorage.getItem("username")==null){
+    window.location.href="./index.html";
+
+}
+
+
 if(localStorage.getItem("dark")==="false"){
     document.querySelector("link").href="./public/assets/style/style_light.css"
 }else {
@@ -17,6 +23,7 @@ const main = async () => {
     let values= document.querySelectorAll("#value");
     let shortDesc=document.querySelector("#percentageDescription");
     let longDesc=document.querySelector("#fullDescription");
+    let imgGauge=document.querySelector(".gauge > img");
 
     document.querySelector("#user").innerText = "Ciao, "+localStorage.getItem("username")+"!";
 
@@ -38,6 +45,7 @@ const main = async () => {
             let currentData= await data[random];
             percentageElement.innerText= await currentData.percentage+"%";
             subPercentage.innerText=await currentData.percentage;
+            imgGauge.src="./public/assets/images/sample/gauge"+ await currentData.percentage+".png";
             shortDesc.innerText=await currentData.shortDescription;
             longDesc.innerText=await currentData.longDescription;
 

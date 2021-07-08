@@ -1,3 +1,9 @@
+if(localStorage.getItem("username")==null){
+    window.location.href="./index.html";
+
+}
+
+
 if(localStorage.getItem("dark")==="false"){
     document.querySelector("link").href="./public/assets/style/style_light.css"
 }else {
@@ -33,6 +39,8 @@ const main = async (dataPos) => {
     let values= document.querySelectorAll("#value");
     let shortDesc=document.querySelector("#percentageDescription");
     let longDesc=document.querySelector("#fullDescription");
+    let imgGauge=document.querySelector(".gauge > img");
+    
 
     let date= new Date();
     subPos.innerText=localStorage.getItem("position");
@@ -42,6 +50,7 @@ const main = async (dataPos) => {
     let currentData= await data[dataPos];
     percentageElement.innerText=  currentData.percentage+"%";
     subPercentage.innerText= currentData.percentage;
+    imgGauge.src="./public/assets/images/sample/gauge"+ await currentData.percentage+".png";
     shortDesc.innerText= currentData.shortDescription;
     longDesc.innerText= currentData.longDescription;
 

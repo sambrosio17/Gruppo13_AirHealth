@@ -298,8 +298,6 @@ body {
 .gauge .infoGauge .positionInfo img {
   width: 26px;
   height: 26px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 .gauge .infoGauge .positionInfo span {
@@ -646,7 +644,7 @@ span.error {
 }
 
 p#thx {
-  color: #000;
+  color: #fff;
   font-size: 26px;
   font-weight: 500;
   text-align: center;
@@ -656,5 +654,41 @@ img#imgThx {
   width: 120px;
   display: block;
   margin: 10px auto 0px;
+}
+
+.adviceDetail {
+  position: absolute;
+  background-color: #121212;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 79%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  max-height: 30%;
+  overflow-y: scroll;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  z-index: 111;
+}
+
+.adviceDetail::-webkit-scrollbar {
+  display: none;
+}
+
+.adviceDetail p:nth-child(1) {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.adviceDetail p:nth-child(2) {
+  margin-top: 5px;
+  text-align: justify;
 }
 /*# sourceMappingURL=style_dark.css.map */
